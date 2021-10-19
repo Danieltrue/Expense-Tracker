@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Expense Tracker</title>
+</head>
+<body>
+    <div class="main-container row">
+        <div class="container row">
+            <!-- amount field -->
+            <main class="amount-holder row">
+                <div class="amount-holder-child">
+                    <p class="balance-name">Balance</p>
+                    <p id="amount">&#8358;00.00</p>
+                </div>
+            </main>
+            <!-- amount field -->
+
+            <!-- money-filed -->
+            <main class="money-holder row">
+                <div class="money-holder-box">
+                    <div class="money-plus">
+                        <h6>income</h6>
+                        <p>00.00</p>
+                    </div>
+                    
+                    <div class="money-minus">
+                        <h6>Expense</h6>
+                        <p>00.00</p>
+                    </div>
+                </div>
+            </main>
+            <!-- money-filed -->
+
+            <!-- history -->
+            <section class="history-holder  row">
+                <div class="history-holder-long">
+                    <h6>transaction</h6>
+                    <ul class="history-list">
+                        <!-- our list -->
+                        <!-- our list -->
+                    </ul>
+                </div>
+            </section>
+            <!-- history -->
+
+            <!-- form  -->
+            <section class="form-detail row">
+                <form action="#">
+                    <div class="name-input">
+                        <label for="name">Transaction Detail</label>
+                        <input type="text" name="name" id="name-input" placeholder="Add the Transaction Name">
+                    </div>
+                    <div class="number-input">
+                        <label for="number">Amount Detail</label>
+                        <input type="number" name="number" id="number-input" placeholder="Add Transaction Ammount">
+                    </div>
+
+                    <div class="button-input">
+                        <input type="submit" value="Add Transaction">
+                    </div>
+                </form>
+            </section>
+            <!-- form  -->
+        </div>
+
+
+
+
+        <!-- bottom controller -->
+        <!-- <section class="button-holder row">
+
+        </section> -->
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

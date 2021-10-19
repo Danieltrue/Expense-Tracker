@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --allColor: #555;
+    --sun: #f1c40f;
+    --carrot: #e67e22;
+    --darkGlow: #2c3e50;
+    --rad: 1rem;
+    --shadow: #ccc;
+    --oldColor: #949494;
+    --myRed: rgb(238, 45, 45);
+    --myGreen: rgb(17, 185, 17);
+}
+
+:focus {
+    outline: none;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+html {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    color: var(--allColor);
+}
+
+.main-container {
+    width: 485px;
+    min-height: 100vh;
+    position: relative;
+    padding: 0.5rem 0;
+}
+
+.container {
+    margin: 0 auto;
+    background-color: #fff;
+    width: 80%;
+    height: 90%;
+    padding: 0.5rem 0;
+}
+
+.button-holder {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    box-shadow: 2px 2px 9px var(--shadow);
+    height: 10%;
+    width: 80%;
+    padding: 0.5rem;
+}
+
+.amount-holder {
+    width: 90%;
+    height: 200px;
+    box-shadow: 2px 2px 9px var(--shadow);
+    padding: 0.5rem;
+    margin: 0 auto;
+    margin-bottom: 0.3rem;
+}
+
+
+.amount-holder p:first-of-type {
+    font-size: 80%;
+    color: var(--shadow);
+}
+
+.amount-holder p:last-of-type {
+    font-size: 140%;
+    font-weight: 400;
+}
+
+.money-holder {
+    padding: 0.5rem;
+    width: 90%;
+    height: 10%;
+    box-shadow: 2px 2px 9px var(--shadow);
+    margin: 0 auto;
+    margin-bottom: 0.3rem;
+}
+
+.money-holder .money-holder-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.money-holder-box div {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.money-holder-box div:last-of-type {
+    border-left: 1px solid #ccc;
+}
+.money-minus,
+.money-plus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.money-minus h6,
+.money-plus h6 {
+    font-size: 80%;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.money-plus p {
+    color: var(--myGreen);
+    font-size: 90%;
+    margin-top: 0.1rem;
+}
+.money-minus p {
+    color: var(--myRed);
+    font-size: 90%;
+    margin-top: 0.1rem;
+}
+.history-holder {
+    width: 90%;
+    min-height: 100%;
+    box-shadow: 2px 2px 9px var(--shadow);
+    padding: 0.5rem;
+    margin: 0 auto;
+    margin-bottom: 0.3rem;
+}
+.history-holder-long {
+    padding: 0.5rem;
+    min-height: 100%;
+}
+
+.history-holder-long h6{
+    margin: 0.2rem 0;
+    text-transform: capitalize;
+    font-size: 80%;
+    color: var(--oldColor);
+}
+
+.history-list {
+    min-height: 100%;
+    padding: 0.5rem 0;
+}
+
+.transaction-parent {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 2px 2px 9px var(--shadow);
+    padding: 0.4rem 0;
+    margin: 0.4rem 0;
+    cursor: pointer;
+}
+
+.transaction-parent p {
+    margin-right: 0.5rem;
+    font-size: 80%;
+}
+
+.transaction-parent button {
+    margin-left: 0.5rem;
+    background-color: var(--myRed);
+    color: #fff;
+    border: 0;
+    padding: 0.2rem;
+    transition: opacity 0.5s;
+    opacity: 0;
+}
+
+.transaction-amount.plus {
+    color: var(--myGreen);
+}
+
+.transaction-amount.minus {
+    color: var(--myRed);
+}
+
+.transaction-parent:hover button {
+    opacity: 1;
+}
+
+.transaction-parent li {
+    margin-left: 0.5rem ;
+    flex-grow: 1;
+    list-style-type: none;
+    text-transform: capitalize;
+    font-size: 90%;
+}
+
+.form-detail {
+    margin: 0 auto;
+    box-shadow: 2px 2px 9px var(--shadow);
+    width: 90%;
+    height: 100%;
+    padding: 0.5rem;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+form div input {
+    padding: 0.5rem 0.2rem;
+}
+
+form div input[type=text],
+form div input[type=number] {
+    border: 0;
+    background-color: #f3f3f3;
+}
+
+/* button  */
+form div input[type=submit] {
+    margin-top: 1rem;
+    background-color: var(--darkGlow);
+    color: #fff;
+    border: 0;
+}
+
+form label {
+    color: var(--shadow);
+    text-transform: capitalize;
+    font-size: 80%;
+    margin-bottom: 0.5rem;
+}
